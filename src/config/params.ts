@@ -6,3 +6,4 @@ import { defineSecret } from 'firebase-functions/params';
  * Set in production using: firebase functions:secrets:set FB_API_KEY
  */
 export const fbApiKeySecret = defineSecret('FB_API_KEY');
+export const adminAuthSecret = defineSecret("ADMIN_AUTH_SECRET");

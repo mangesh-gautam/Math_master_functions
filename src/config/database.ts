@@ -66,3 +66,9 @@ export const executeFunction = async (fnName: string, params: any[]) => {
   const sql = `SELECT * FROM ${fnName}(${placeholders})`;
   return query(sql, params);
 };
+
+export {
+  executeSupabaseSql,
+  executeSupabaseSqlOne,
+  executeSupabaseTransaction,
+} from "../utils/supabaseSql";
